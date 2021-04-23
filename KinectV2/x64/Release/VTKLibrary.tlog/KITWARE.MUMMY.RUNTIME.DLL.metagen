@@ -1,0 +1,46 @@
+  Kitware.mummy.Runtime.Unmanaged.dll - 0, Kitware.mummy.Runtime.Unmanaged.dll
+ImageRuntimeVersion: v2.0.50727
+Assembly Kitware.mummy.Runtime, Version=1.0.2.599, Culture=neutral, PublicKeyToken=995c7fb9db2c1b44: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Kitware.mummy.Runtime.Methods: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Fields:
+    System.String RuntimeEL_dll = Kitware.mummy.Runtime.Unmanaged.dll : Public, Static, Literal, HasDefault
+  Methods:
+    Trace(String): PrivateScope, Public, Static, HideBySig
+    AddTableReference(IntPtr, Object, Boolean): PrivateScope, Public, Static, HideBySig
+    RemoveTableReference(IntPtr): PrivateScope, Public, Static, HideBySig
+    GetTypeEntryCount(): PrivateScope, Public, Static, HideBySig
+    GetTypeEntryClassNameKey(UInt32): PrivateScope, Public, Static, HideBySig
+    RegisterType(Assembly, String, Type): PrivateScope, Public, Static, HideBySig
+    CreateWrappedObject(UInt32, UInt32, UInt32, IntPtr, Boolean, Boolean&(Out)): PrivateScope, Public, Static, HideBySig
+    CreateWrappedObject(String, IntPtr, Boolean, Boolean&(Out)): PrivateScope, Public, Static, HideBySig
+    PrintIndexedConstructorsTable(): PrivateScope, Public, Static, HideBySig
+    PrintRegisteredAssembliesTable(): PrivateScope, Public, Static, HideBySig
+    PrintRegisteredTypesTable(): PrivateScope, Public, Static, HideBySig
+    PrintWrappedObjectsTable(): PrivateScope, Public, Static, HideBySig
+    Print(Boolean): PrivateScope, Public, Static, HideBySig
+    Print(): PrivateScope, Public, Static, HideBySig
+    Verify(): PrivateScope, Public, Static, HideBySig
+    ForceClearWrappedObjectsTable(): PrivateScope, Public, Static, HideBySig
+    ForceRemoveCallbacks(): PrivateScope, Public, Static, HideBySig
+Class Kitware.mummy.Runtime.WrappedException: AutoLayout, AnsiClass, Class, Public
+  :System.Exception
+  Interfaces:
+    System.IDisposable
+  Fields:
+    System.String MRClassNameKey : Public, Static, InitOnly
+    System.String MRFullTypeName = Kitware.mummy.Runtime.WrappedException : Public, Static, Literal, HasDefault
+  Methods:
+    GetCppThis(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Kitware.mummy.Runtime.WrappedObject: AutoLayout, AnsiClass, Class, Public
+  Interfaces:
+    System.IDisposable
+  Fields:
+    System.String MRClassNameKey : Public, Static, InitOnly
+    System.String MRFullTypeName = Kitware.mummy.Runtime.WrappedObject : Public, Static, Literal, HasDefault
+  Methods:
+    GetCppThis(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask

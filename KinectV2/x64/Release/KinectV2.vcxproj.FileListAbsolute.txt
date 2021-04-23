@@ -1,0 +1,2 @@
+F:\DATN\Tham khao\Nhom_DATN20192_Nguyen_Minh_Chien_Le_Van_Thang\xu_ly_anh_va_dieu_khien\code_all\KinectV2\x64\Release\KinectV2.vcxprojAssemblyReference.cache
+F:\DATN\Tham khao\Nhom_DATN20192_Nguyen_Minh_Chien_Le_Van_Thang\xu_ly_anh_va_dieu_khien\code_all\KinectV2\x64\Release\KinectV2.vcxproj.CopyComplete
